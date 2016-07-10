@@ -2,4 +2,19 @@ require('angular')
 
 var app = angular.module('myApp', []);
 
-console.log("Succesfully loaded Angular ", app);
+app.directive('test', function() {
+
+    var link = function(scope, element, attrs) {
+        console.log("Successfully initiated Angular application");
+    };
+
+
+    return {
+        restrict: 'EA',
+        scope: {
+            datasource: '=',
+            add: '&',
+        },
+        link: link
+    };
+});
