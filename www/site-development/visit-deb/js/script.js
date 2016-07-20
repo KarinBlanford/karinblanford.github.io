@@ -1,20 +1,14 @@
-require('angular')
+var appendPolaroid = function() {
+    var $div = $("<div>", {
+        id: "foo",
+        class: "a"
+    });
+    $div.click(function() {
+        console.log("I was clicked")
+    });
+    $("#box").append($div);
+}
 
-var app = angular.module('myApp', []);
-
-app.directive('test', function() {
-
-    var link = function(scope, element, attrs) {
-        console.log("Successfully initiated Angular application");
-    };
-
-
-    return {
-        restrict: 'EA',
-        scope: {
-            datasource: '=',
-            add: '&',
-        },
-        link: link
-    };
-});
+var init = function() {
+    console.log("Successfully initiated application");
+}
