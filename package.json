@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/KarinBlanford/karinblanford.github.io/issues"
   },
-  "homepage": "https://github.com/KarinBlanford/karinblanford.github.io#readme"
+  "homepage": "https://github.com/KarinBlanford/karinblanford.github.io#readme",
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
 }
