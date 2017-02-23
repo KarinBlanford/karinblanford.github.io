@@ -1,7 +1,7 @@
 {
   "name": "digital-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portfolio page for Development Work",
   "main": "index.js",
   "scripts": {
     "init": "",
@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/KarinBlanford/karinblanford.github.io#readme",
   "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
     "webpack": "^2.2.1"
   }
 }
