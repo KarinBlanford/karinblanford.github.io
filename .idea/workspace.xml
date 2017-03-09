@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5dd176b-f8db-4c56-8ec6-40f11a8c5d62" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/static-files/TicTacToeSolution.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config.codekit" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/brand-pages/hustlephx.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/hustlephx/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/site-development/visit-deb/js/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/site-development/visit-deb/visitdeb.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/hustlephx/brand-identity/brand-identity.html" afterPath="$PROJECT_DIR$/www/blog/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/hustlephx/style/style.css" afterPath="$PROJECT_DIR$/www/portfolio/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/blog/index.html" afterPath="$PROJECT_DIR$/www/blog/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/portfolio/index.html" afterPath="$PROJECT_DIR$/www/portfolio/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,21 +21,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/blog/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+            <state relative-caret-position="270">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/portfolio/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -80,8 +70,8 @@
         <option value="$PROJECT_DIR$/www/css/theme.css" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/www/portfolio/index.html" />
         <option value="$PROJECT_DIR$/www/blog/index.html" />
+        <option value="$PROJECT_DIR$/www/portfolio/index.html" />
       </list>
     </option>
   </component>
@@ -253,12 +243,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489029115450</updated>
-      <workItem from="1489029116840" duration="2904000" />
+      <workItem from="1489029116840" duration="3002000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2904000" />
+    <option name="totallyTimeSpent" value="3002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="43" width="1199" height="737" extended-state="0" />
@@ -353,18 +343,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/portfolio/index.html">
+    <entry file="file://$PROJECT_DIR$/www/blog/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/blog/index.html">
+    <entry file="file://$PROJECT_DIR$/www/portfolio/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        <state relative-caret-position="345">
+          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
           <folding />
         </state>
       </provider>
