@@ -1,3 +1,18 @@
+/*=============================================================================
+ |   Assignment:  [Assignment Title]
+ |       Author:  [Your Name (Your E-mail Address)]
+ |
+ |   Instructor:  T. Firzli
+ |     Due Date:  [Due Date and Time]
+ |
+ |  Description:  [Describe the program's goal, IN DETAIL.]
+ |
+ |
+ | Deficiencies:  [If you know of any problems with the code, provide
+ |                details here, otherwise clearly state that you know
+ |                of no unsatisfied requirements and no logic errors.]
+ *===========================================================================*/
+
 import java.util.Random;
 import java.util.Scanner;
 
