@@ -24,9 +24,9 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
-              <caret line="52" column="38" lean-forward="false" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+              <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
               <folding>
-                <element signature="e#4802#4807#0" expanded="true" />
+                <element signature="e#4796#4801#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -222,12 +222,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489029115450</updated>
-      <workItem from="1489029116840" duration="3735000" />
+      <workItem from="1489029116840" duration="3843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3735000" />
+    <option name="totallyTimeSpent" value="3843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="43" width="1199" height="737" extended-state="0" />
@@ -331,9 +331,9 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="52" column="38" lean-forward="false" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+          <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
           <folding>
-            <element signature="e#4802#4807#0" expanded="true" />
+            <element signature="e#4796#4801#0" expanded="true" />
           </folding>
         </state>
       </provider>
