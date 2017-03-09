@@ -41,7 +41,10 @@ public class TicTacToe {
 	/**
 	 * @param args
 	 * @return void
-	 * main method: all game play occurs here
+	 * main method: all game play occurs here -
+	 * TODO: Complete the main method by translating the comments listed into code
+	 * TODO: Use the helper methods below to implement a working TicTacToe game
+	 * TODO: Do not delete the comments!
 	 */
 	public static void main(String[] args) {
 		// create a new Scanner called 'keyboard'
