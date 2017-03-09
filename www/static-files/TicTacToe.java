@@ -45,6 +45,7 @@ public class TicTacToe {
 	 */
 	public static void main(String[] args) {
 		// create a new Scanner called 'keyboard'
+		Scanner keyboard = new Scanner(System.in);
 
 		// print a welcome message to the user
 
