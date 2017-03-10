@@ -84,56 +84,59 @@ public class TicTacToe {
 
 		// create a do-while loop that continues while the userWon and
 		// computerWon boolean values we created are both false
+		// OUTER DO WHILE LOOP STARTS HERE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 		// -- inside outer do-while loop: create another do-while loop that continues
-		// -- while the unavailableSelection boolean variable we created above is true
+		// -- while the condition unavailableSelection == true
+		// -- INNER DO WHILE LOOP STARTS HERE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-		// -- -- inside nested do-while loop: print a message prompting the user
+		// -- -- inside inner do-while loop: print a message prompting the user
 		// -- -- to select a row within the tic tac toe board 0, 1, or 2
 
-		// -- -- inside nested do-while loop: save the user's input using the
+		// -- -- inside inner do-while loop: save the user's input using the
 		// -- -- scanner into the variable called userRow
 
-		// -- -- inside nested do-while loop: create a while loop that continues
+		// -- -- inside inner do-while loop: create a while loop that continues
 		// -- -- while the function isValidDimensions returns false when given userRow as an
 		// -- -- input
 
-		// -- -- -- inside nested while loop: print an 'Ooops!' message to the
+		// -- -- -- inside inner do-while loop && while loop: print an 'Ooops!' message to the
 		// -- -- -- user telling them their selection was not valid, try again.
 
-		// -- -- -- inside nested while loop: save the user's input using the
+		// -- -- -- inside inner do-while loop && while loop: save the user's input using the
 		// -- -- -- scanner into the variable called userRow
 
-		// -- -- inside nested do-while loop: print a message to the user
-		// -- -- prompting them to select a column within the tic tac toe board 
+		// -- -- inside inner do-while loop: print a message to the user
+		// -- -- prompting them to select a column within the tic tac toe board
 		// -- -- 0, 1, or 2.
 
-		// -- -- inside nested do-while loop: save the user's input using the
+		// -- -- inside inner do-while loop: save the user's input using the
 		// -- -- scanner into the variable called userColumn
 
-		// -- -- inside nested do-while loop: create a while loop that continues
-		// -- -- while the function isValidDimensions returns false when given 
+		// -- -- inside inner do-while loop: create a while loop that continues
+		// -- -- while the function isValidDimensions returns false when given
 		// -- -- userColumn as an input
 
-		// -- -- -- inside nested while loop: print a message to the user telling
+		// -- -- -- inside inner do-while loop && while loop: print a message to the user telling
 		// -- -- -- them their selection is not valid, try again.
 
-		// -- -- -- inside nested while loop: save the user's input using the
+		// -- -- -- inside inner do-while loop && while loop: save the user's input using the
 		// -- -- -- scanner into the variable userColumn
 
-		// -- -- inside nested do-while loop: save the OPPOSITE result of calling
-		// -- -- the function isOpenSpace with userRow and userColumn as arguments 
+		// -- -- inside inner do-while loop: save the OPPOSITE result of calling
+		// -- -- the function isOpenSpace with userRow and userColumn as arguments
 		// -- -- into the variable unavailableSelection that we created above.
 
-		// -- -- inside nested do-while loop: if unavailableSelection is true,
-		// -- -- print a message to the user telling them the space they selected is 
+		// -- -- inside inner do-while loop: if unavailableSelection is true,
+		// -- -- print a message to the user telling them the space they selected is
 		// -- -- occupied - try again. print the tic tac toe board
 
-		// -- -- inside nested do-while loop: while loop terminates here with
-		// -- -- condition unavailableSelection == true
+		// -- INNER DO WHILE LOOP ENDS HERE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		// -- inside outer do-while loop: inner do while loop terminates here with
+		// -- condition unavailableSelection == true
 
 		// -- inside outer do-while loop: call the method executeUserTurn with
-		// -- the arguments userRow, userColumn, and userXO saving its output to the 
+		// -- the arguments userRow, userColumn, and userXO saving its output to the
 		// -- userWon variable we created above.
 
 		// -- inside outer do-while loop: print the tic tac toe board using the print() method
@@ -153,7 +156,8 @@ public class TicTacToe {
 		// -- inside outer do-while loop: if computerWon == true, print that the
 		// -- user lost and better luck next time
 
-		// -- inside outer do-while loop: outer while loop terminates here -
+		// OUTER DO WHILE LOOP ENDS HERE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		// -- outer do while loop terminates here -
 		// -- continues if both userWon and computerWon are false
 		
 		// print a message to the user telling them the game is over
