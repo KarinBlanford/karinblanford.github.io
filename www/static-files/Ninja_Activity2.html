@@ -17,10 +17,9 @@
 <p class="p2"><br></p>
 <p class="p1">2. Add the following methods to the Ninja.java class:</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span>a. public void karateChop(Ninja otherNinja)</p>
+<p class="p1"><span class="Apple-tab-span">	</span>a. public void karateChop(Ninja otherNinja) &lt;— notice how we can use ‘Ninja’ as a data type now that we have created it as an Object.</p>
 <p class="p1"><span class="Apple-tab-span">	</span>c. public void losePoints(int points)</p>
 <p class="p1"><span class="Apple-tab-span">	</span>b. public void powerUp()</p>
-<p class="p1"><span class="Apple-tab-span">	</span>c. public void isGameOver()</p>
 <p class="p2"><br></p>
 <p class="p1">3. In the powerUp method - add +10 points to the ninja’s pointsRemaining.</p>
 <p class="p2"><br></p>
@@ -28,6 +27,8 @@
 <p class="p2"><br></p>
 <p class="p1">5. The karateChop method can be called by one Ninja on another (otherNinja). A karate chop is only successful 50% of the time. Generate a random number 1 to 100. If the number is even, the karate chop is successful. If the number is odd, the karate chop is unsuccessful and no points will be taken from otherNinja. If the karate chop was successful - generate another random number 1 - 20. This is how many points should be taken from the otherNinja by calling: otherNinja.losePoints(&lt;number of points they lost&gt;).</p>
 <p class="p2"><br></p>
-<p class="p1">6. In the GameConsole.java class - create a method called: ‘isGameOver’ that returns true if one of the ninja’s number of pointsRemaining is less than 1.<span class="Apple-converted-space"> </span></p>
+<p class="p1">6. In the GameConsole.java class - create a method called: ‘isGameOver’ that returns true if one of the ninja’s number of pointsRemaining is less than 1:</p>
+<p class="p2"><span class="Apple-tab-span">	</span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>a. public boolean isGameOver(Ninja player1, Ninja player2) &lt;— notice how we can use ‘Ninja’ as a data type now that we have created it as an Object.</p>
 </body>
 </html>
