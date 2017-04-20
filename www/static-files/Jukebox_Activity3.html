@@ -18,52 +18,18 @@
 </head>
 <body>
 <p class="p1"><span class="s1">Jukebox Project Part 3:</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p2"><span class="s2">1. Add a public method to Song.java called ‘</span>getFormattedSongLength’ that returns a String format of the song length in “&lt;minutes&gt;:&lt;seconds&gt;” format.</p>
+<p class="p2"><span class="s2"><br>
+1. Add a public method to Song.java called ‘</span>getFormattedSongLength’ that returns a String format of the song length in “&lt;minutes&gt;:&lt;seconds&gt;” format.</p>
 <p class="p3"><br></p>
 <p class="p2">2. Add a test to your SongTest.java file called ‘formattedSongLengthTest’ and add unit test cases for both valid and invalid String outputs.</p>
 <p class="p2"><span class="Apple-tab-span">	</span>i.e. assertTrue(track1.getFormattedSongLength(), “3:04”);</p>
 <p class="p2"><span class="Apple-tab-span">	</span><span class="Apple-converted-space">      </span>assertFalse(track1.getFormattedSongLength(), “3:4”); //invalid time format should fail</p>
 <p class="p4"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">2. In your new Jukebox project, create the following classes (capitalization is important):</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>a. Album.java</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>b. Song.java</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>c. JukeboxPlayer.java</span></p>
-<p class="p1"><span class="s1"><br>
+<p class="p1"><span class="s1">2. If you haven’t already created it, add a new JUnit test file called ‘AlbumTest.java’</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>a. Outline at http://karin.io/www/static-files/AlbumTest.java</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>b. Look for ‘//TODO:’ comments in file and finish testing the Album object<br>
 </span></p>
-<p class="p1"><span class="s1">3. In JukeboxPlayer.java:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>a. Add a main method</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>b. Create a new Scanner object called ‘keyboard’</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>c. Print ‘Welcome to the Jukebox Player! Select a song.’ to the console</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">4. In Song.java:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>a. Create the following instance variables. Use your Ninja.java file as a reference.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>i. songTitle (String)</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>ii. songLength (double)</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>iii. songArtist (String)</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>iv. albumName (String)</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>b. Create the following functions in Song.java:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>i. a constructor that accepts (title, length, artist) as arguments</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>ii. getters/setters for all instance variables</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>iii. a toString method that returns the string “&lt;songTitle&gt; is by &lt;songArtist&gt; and is &lt;songLength&gt; minutes long”</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">5. In Album.java:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>a. Create the following instance variables:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>i. songList (array of Song objects)</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>ii. albumArtist (String)</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>iii. albumGenre (String)</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>iv. albumName (String)</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>b. Create the following functions in Album.java:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>i. a constructor that accepts (songList, albumArtist, albumGenre, albumName) as arguments</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>ii. getters/setters for all instance variables</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>iii. a toString method that returns the string “&lt;albumGenre&gt; music &lt;albumName&gt; is by<span class="Apple-converted-space">  </span>&lt;albumArtist&gt; and contains the following songs &lt;songList&gt;.” (Print each song on a new line with a number in front of it:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>“Rock music album Room on Fire is by The Strokes and contains the following songs:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>1. ‘What ever Happened?’</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>2. ‘Automatic Stop’</span></p>
-<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>3. ’12:51’”</span></p>
+<p class="p1"><span class="s1">3.<span class="Apple-converted-space"> </span></span></p>
 <p class="p4"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
 </body>
 </html>
