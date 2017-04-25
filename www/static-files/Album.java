@@ -57,6 +57,12 @@ public class Album {
 		return "";
 	}
 	
+	/*
+	 * @description - compares two Album objects
+	 * @param - Album otherAlbum
+	 * @returns - true if the two albums being compared have identical Song lists, artists, album names,
+	 * and album genres
+	 */
 	public boolean equals(Album otherAlbum) {
 		return true;
 	}
