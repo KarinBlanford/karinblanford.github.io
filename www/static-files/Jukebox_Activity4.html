@@ -1,0 +1,35 @@
+<html>
+<head>
+</head>
+<body>
+<ol>
+<li>Add the following function to your JukeboxPlayer.java file:<br>
+&ensp;public static void populateList() {<br>
+&ensp;&ensp;&ensp;&ensp;String baseDir = System.getProperty("user.dir") + System.getProperty("file.separator") + "songfiles"
+				+ System.getProperty("file.separator");<br>
+
+&ensp;&ensp;&ensp;&ensp;ArrayList<String> results = new ArrayList<String>();<br>
+
+&ensp;&ensp;&ensp;&ensp;File[] files = new File(baseDir).listFiles();<br>
+
+&ensp;&ensp;&ensp;&ensp;for (File file : files) {<br>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;if (file.isFile()) {<br>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;results.add(file.getName());<br>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;}<br>
+&ensp;&ensp;&ensp;&ensp;}<br>
+&ensp;}<br><br>
+</li>
+<li>Replace your songfiles file with <a href="./songfiles.zip">http://www.karin.io/www./static-files/songfiles.zip</a>. Make sure to unzip the folder before adding it to your project. Feel free to rename song files (but don't change the extension).</li><br>
+<li>Add "ArrayList<String> songLibrary = populateList();" to your main method. You can access an element in your songLibrary by calling songLibrary.get(index) where index is the position of the song you want to access. This method returns the String name of the song.</li><br>
+<li>Using Album and Song Objects, create a Jukebox for a user to play music. The Jukebox should be able to:<br>
+<ol type="a">
+<li>List all the songs in the Jukebox</li>
+<li>Play a song given it's index in the song list</li>
+<li>(optional)List all the albums in the Jukebox</li>
+<li>(optional)List all the songs in an album</li>
+<li>(optional)Play a random song from an album</li>
+</ol>
+</li>
+</ol>
+</body>
+</html>
