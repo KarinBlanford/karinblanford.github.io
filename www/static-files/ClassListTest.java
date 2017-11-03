@@ -19,10 +19,8 @@ public class ClassListTest {
 	@Test
 	public void testGetClassRosterArray() {
 		Student[] studentRoster = csClass.getClassRosterArray();
-		assertEquals(studentRoster.length, csClass.getStudentCount());
 		for (int i = 0; i < studentRoster.length; i++) {
-			assertEquals(studentRoster[i].getName(), csClass.getClassRosterList().get(i).getName());
-			assertEquals(studentRoster[i].getId(), csClass.getClassRosterList().get(i).getId());
+			assertEquals(studentRoster[i].toString(), csClass.getClassRosterList().get(i).toString());
 		}
 	}
 
@@ -47,7 +45,7 @@ public class ClassListTest {
 		int currentCount = csClass.getStudentCount();
 		csClass.addStudent(new Student("Jim", 9874235));
 		int updatedCount = csClass.getStudentCount();
-		assertEquals(currentCount, updatedCount);
+		assertEquals((currentCount + 1), updatedCount);
 	}
 
 	@Test
@@ -55,7 +53,7 @@ public class ClassListTest {
 		int currentCount = csClass.getStudentCount();
 		csClass.removeStudent();
 		int updatedCount = csClass.getStudentCount();
-		assertEquals(currentCount, updatedCount);
+		assertEquals((currentCount - 1), updatedCount);
 	}
 
 	@Test
