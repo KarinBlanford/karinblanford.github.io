@@ -1,0 +1,162 @@
+<html>
+
+<head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <style>
+        #piemenu>svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        #piemenu {
+            height: 400px;
+            width: 400px;
+            margin: auto;
+        }
+
+        @media (max-width: 400px) {
+            #piemenu {
+                height: 300px;
+                width: 300px;
+            }
+        }
+
+        [class|=wheelnav-piemenu-slice-basic] {
+            fill: #497F4C;
+            stroke: none;
+        }
+
+        [class|=wheelnav-piemenu-slice-selected] {
+            fill: #497F4C;
+            stroke: none;
+        }
+
+        [class|=wheelnav-piemenu-slice-hover] {
+            fill: #497F4C;
+            stroke: none;
+            fill-opacity: 0.77;
+            cursor: pointer;
+        }
+
+        [class|=wheelnav-piemenu-title-basic] {
+            fill: #333;
+            stroke: none;
+        }
+
+        [class|=wheelnav-piemenu-title-selected] {
+            fill: #fff;
+            stroke: none;
+        }
+
+        [class|=wheelnav-piemenu-title-hover] {
+            fill: #222;
+            stroke: none;
+            cursor: pointer;
+        }
+
+        [class|=wheelnav-piemenu-title]>tspan {
+            font-family: Impact, Charcoal, sans-serif;
+            font-size: 24px;
+        }
+
+        .wheelnav-piemenu-marker {
+            stroke: #444;
+            stroke-width: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='piemenu' data-wheelnav data-wheelnav-slicepath='DonutSlice' data-wheelnav-marker data-wheelnav-markerpath='PieLineMarker'
+        data-wheelnav-rotateoff data-wheelnav-navangle='270' data-wheelnav-cssmode data-wheelnav-init>
+        <div data-wheelnav-navitemimg='../svg/004-handshake.svg' onmouseup='iconClickHandler("estate-planning", "Estate Planning")'></div>
+        <div data-wheelnav-navitemimg='../svg/007-folder.svg' onmouseup='iconClickHandler("estate-planning", "Business Entity Formation")'></div>
+        <div data-wheelnav-navitemimg='../svg/009-money.svg' onmouseup='iconClickHandler("estate-planning", "Tax Loopholes and Credit")'></div>
+        <div data-wheelnav-navitemimg='../svg/011-bar-graph-with-dollar-sign.svg' onmouseup='iconClickHandler("estate-planning", "Income Shifting")'></div>
+        <div data-wheelnav-navitemimg='../svg/012-safe-box.svg' onmouseup='iconClickHandler("estate-planning", "Asset Protection")'></div>
+        <div data-wheelnav-navitemimg='../svg/002-piggy-bank.svg' onmouseup='iconClickHandler("estate-planning", "Retirement Planning")'></div>
+        <div data-wheelnav-navitemimg='../svg/003-home.svg' onmouseup='iconClickHandler("estate-planning", "Real Estate Strategies")'></div>
+        <div data-wheelnav-navitemimg='../svg/001-money-2.svg' onmouseup='iconClickHandler("estate-planning", "Social Security Planning")'></div>
+        <div data-wheelnav-navitemimg='../svg/005-notes.svg' onmouseup='iconClickHandler("estate-planning", "Succession Planning")'></div>
+    </div>
+    <div class="content-container container" style="padding: 1rem; margin: 0 auto; border: 1px solid lightgray;border-radius:1%;">
+        <h3 id="more-content">Certified Tax Coach</h5>
+        <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+        </div>
+        <button class="btn btn-dark" style="margin: 2rem; margin: 1rem auto;">Learn More</button>
+    </div>
+</body>
+<script src="../wheelycool/raphael.min.js"></script>
+<script src="../wheelycool/wheelnav.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script>
+    var images = [
+        {
+            src: '../svg/004-handshake.svg',
+            title: 'Estate<br>Planning',
+            id: 'estate-planning'
+        },
+        {
+            src: '../svg/007-folder.svg',
+            title: 'Business<br>Entity<br>Formation',
+            id: 'business-entity-formation'
+        },
+        {
+            src: '../svg/009-money.svg',
+            title: 'Tax<br>Loopholes<br>And Credit',
+            id: 'tax-loopholes-and-credit'
+        },
+        {
+            src: '../svg/011-bar-graph-with-dollar-sign.svg',
+            title: 'Income<br>Shifting',
+            id: 'income-shifting'
+        },
+        {
+            src: '../svg/012-safe-box.svg',
+            title: 'Asset<br>Protection',
+            id: 'asset-protection'
+        },
+        {
+            src: '../svg/002-piggy-bank.svg',
+            title: 'Retirement<br>Planning',
+            id: 'retirement-planning'
+        },
+        {
+            src: '../svg/003-home.svg',
+            title: 'Real Estate<br>Strategies',
+            id: 'real-estate-strategies'
+        },
+        {
+            src: '../svg/001-money-2.svg',
+            title: 'Social Security<br>Planning',
+            id: 'social-security-planning'
+        },
+        {
+            src: '../svg/005-notes.svg',
+            title: 'Succession<br>Planning',
+            id: 'succession-planning'
+        }];
+    function replaceAll(str, find, replace) {
+        return str.replace(new RegExp(find, 'g'), replace);
+    }
+    function iconClickHandler(id, title) {
+        console.log("element clicked: ", id);
+        // var innerContent = replaceAll(title, '<br>', ' ');
+        // document.getElementById('exampleModalLongTitle').innerText = innerContent;
+        $('#more-content').text(title);
+    }
+    window.onload = function () {
+        var piemenu = new wheelnav('piemenu');
+        piemenu.wheelRadius = piemenu.wheelRadius * 0.83;
+        piemenu.createWheel();
+    }
+</script>
+
+</html>
