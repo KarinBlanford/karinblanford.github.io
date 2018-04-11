@@ -1,0 +1,125 @@
+.nav-item button {
+  font-size: .75rem;
+}
+
+html {
+  font: 300 100%/1.5 Ubuntu;
+  color: #333;
+}
+
+#client-name {
+  color: #fff;
+}
+
+.component-container {
+  margin: 6rem auto 0 auto;
+  padding: 0 15px;
+  width: 300px;
+}
+
+@media screen and (min-width: 415px) {
+  .component-container {
+    width: 475px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .component-container {
+    width: 700px;
+  }
+}
+
+
+.circle {
+  position: relative;
+  width: 50%;
+  height: 0;
+  padding: 25% 0;
+  margin: 1em auto;
+  border-radius: 50%;
+  background: #666;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.content:before {
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+  width: 0;
+  height: 100%;
+}
+
+.content a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4em;
+  height: 4em;
+  margin: -2em;
+}
+
+.content img {
+  display: block;
+  width: 60px;
+}
+
+.icon-container {
+  display: none;
+}
+
+.deg0 {
+  transform: translate(12em);
+}
+
+/* 12em = half the width of the wrapper */
+
+.deg45 {
+  transform: rotate(45deg) translate(12em) rotate(-45deg);
+  @media (min-width: 768px) {
+    transform: rotate(45deg) translate(14em) rotate(-45deg);
+  }
+}
+
+.deg90 {
+  transform: rotate(90deg) translate(12em) rotate(-90deg);
+}
+
+.deg135 {
+  transform: rotate(135deg) translate(12em) rotate(-135deg);
+}
+
+.deg160 {
+  transform: rotate(160deg) translate(12em) rotate(-160deg);
+}
+
+.deg180 {
+  transform: rotate(180deg) translate(12em) rotate(-180deg);
+}
+
+.deg216 {
+  transform: rotate(216deg) translate(12em) rotate(-216deg);
+}
+
+.deg252 {
+  transform: rotate(252deg) translate(12em) rotate(-252deg);
+}
+
+.deg288 {
+  transform: rotate(288deg) translate(12em) rotate(-288deg);
+}
+
+.deg324 {
+  transform: rotate(324deg) translate(12em) rotate(-324deg);
+}
+
+.deg330 {
+  transform: rotate(330deg) translate(12em) rotate(-330deg);
+}
