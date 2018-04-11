@@ -1,0 +1,194 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <style>
+        #wrapper {
+            top: 50%;
+            position: relative;
+        }
+
+        #center {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .field {
+            position: absolute;
+        }
+
+        .field img {
+            width: 64px;
+            height: 64px;
+        }
+
+        .field span {
+            display: inherit;
+            text-align: center;
+            font-size: .75rem;
+        }
+
+        button:hover, button:focus {
+            cursor: pointer;
+            outline: 0;
+        }
+
+        .modal-btn {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .link {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background: transparent;
+            font-size: inherit;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <div id="wrapper">
+        <div id="center">
+            Certified
+            <br/> Tax Coach
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                    laborum.
+                    <div class="modal-btn">
+                        <button class="btn btn-dark">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+    crossorigin="anonymous"></script>
+<script>
+    var images = [
+        {
+            src: '../svg/004-handshake.svg',
+            title: 'Estate<br>Planning',
+            id: 'estate-planning'
+        },
+        {
+            src: '../svg/007-folder.svg',
+            title: 'Business<br>Entity<br>Formation',
+            id: 'business-entity-formation'
+        },
+        {
+            src: '../svg/009-money.svg',
+            title: 'Tax<br>Loopholes<br>And Credit',
+            id: 'tax-loopholes-and-credit'
+        },
+        {
+            src: '../svg/011-bar-graph-with-dollar-sign.svg',
+            title: 'Income<br>Shifting',
+            id: 'income-shifting'
+        },
+        {
+            src: '../svg/012-safe-box.svg',
+            title: 'Asset<br>Protection',
+            id: 'asset-protection'
+        },
+        {
+            src: '../svg/002-piggy-bank.svg',
+            title: 'Retirement<br>Planning',
+            id: 'retirement-planning'
+        },
+        {
+            src: '../svg/003-home.svg',
+            title: 'Real Estate<br>Strategies',
+            id: 'real-estate-strategies'
+        },
+        {
+            src: '../svg/001-money-2.svg',
+            title: 'Social Security<br>Planning',
+            id: 'social-security-planning'
+        },
+        {
+            src: '../svg/005-notes.svg',
+            title: 'Succession<br>Planning',
+            id: 'succession-planning'
+        }];
+    function createFields() {
+        $('.field').remove();
+        var wrapper = $('#wrapper');
+        for (var i = 0; i < 9; i++) {
+            $('<button class="field link" id=' + images[i].id +
+                ' onclick="iconClickHandler(this.id, \'' + images[i].title + '\')"' +
+                ' data-toggle="modal" data-target="#exampleModalCenter">' +
+                '<img src=' + images[i].src + ' alt="' + replaceAll(images[i].title, '<br>', ' ') + '">' +
+                '<span>' + images[i].title + '</span>' +
+              '</button>'
+            ).appendTo(wrapper);
+        }
+    }
+    function distributeFields() {
+        var radius;
+        if (window.innerHeight < window.innerWidth) {
+            radius = window.innerHeight / 3;
+        } else {
+            radius = window.innerWidth / 3;
+        }
+        var fields = $('.field'), wrapper = $('#wrapper'),
+            center = $('#center'),
+            width = wrapper.width(), height = wrapper.height(),
+            angle = 0, step = (2 * Math.PI) / fields.length;
+        fields.each(function () {
+            var x = Math.round(width / 2 + radius * Math.cos(angle) - $(this).width() / 2);
+            var y = Math.round(height / 2 + radius * Math.sin(angle) - $(this).height() / 2);
+            if (window.console) {
+                console.log($(this).text(), x, y);
+            }
+            $(this).css({
+                left: x + 'px',
+                top: y + 'px'
+            });
+            angle += step;
+        });
+        $('#center').css({
+            left: window.innerWidth / 2,
+            top: window.innerHeight / 2
+        });
+    }
+    function replaceAll(str, find, replace) {
+        return str.replace(new RegExp(find, 'g'), replace);
+    }
+    function iconClickHandler(id, title) {
+        console.log("element clicked: ", id);
+        var innerContent = replaceAll(title, '<br>', ' ');
+        document.getElementById('exampleModalLongTitle').innerText = innerContent;
+    }
+    createFields();
+    distributeFields();
+    window.onresize = function () {
+        createFields();
+        distributeFields();
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>

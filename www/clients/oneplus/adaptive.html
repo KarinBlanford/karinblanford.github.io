@@ -1,0 +1,233 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <style>
+        #wrapper {
+            top: 50%;
+            position: relative;
+        }
+
+        #center {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        button img {
+            width: 100px;
+            height: 100px;
+        }
+
+        button span {
+            display: inherit;
+            text-align: center;
+            font-size: 2rem;
+            width: 100%;
+        }
+
+        .element {
+            text-align: center;
+        }
+
+        button:hover,
+        button:focus {
+            cursor: pointer;
+            outline: 0;
+        }
+
+        .modal-btn {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .link {
+            /* margin: 1rem;
+            padding: 0;
+            border: 0;
+            background: transparent;
+            font-size: inherit; */
+        }
+
+        .modal-title {
+            font-size: 2rem;
+        }
+
+        .modal-body {
+            font-size: 1.5rem;
+        }
+
+        .modal-btn button {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="container">
+        <div class="list-group">
+            <div class="element list-group-item list-group-item-action">
+                <button class="link" onclick="iconClickHandler('estate-planning', 'Estate Planning')" data-toggle="modal" data-target="#exampleModalCenter"
+                    id="estate-planning">
+                    <img src='../svg/004-handshake.svg' alt="Estate Planning">
+                    <span>Estate
+                        <br>Planning</span>
+                </button>
+            </div>
+            <div class="element list-group-item list-group-item-action">
+                <button class="link" onclick="iconClickHandler('business-entity-formation', 'Business Entity Formation')" data-toggle="modal"
+                    data-target="#exampleModalCenter" id="business-entity-formation">
+                    <img src='../svg/007-folder.svg' alt="Business Entity Formation">
+                    <span>Business
+                        <br>Entity
+                        <br>Formation</span>
+                </button>
+            </div>
+            <div class="element list-group-item list-group-item-action">
+                <button class="link" onclick="iconClickHandler('tax-loopholes-and-credit', 'Tax Loopholes And Credit')" data-toggle="modal"
+                    data-target="#exampleModalCenter" id="tax-loopholes-and-credit">
+                    <img src='../svg/009-money.svg' alt="Tax Loopholes And Credit">
+                    <span>Tax
+                        <br>Loopholes
+                        <br>And Credit</span>
+                </button>
+            </div>
+            <div class="list-group-item list-group-item-action element">
+                <button class="link" onclick="iconClickHandler('income-shifting', 'Income Shifting')" data-toggle="modal" data-target="#exampleModalCenter"
+                    id="income-shifting">
+                    <img src='../svg/011-bar-graph-with-dollar-sign.svg' alt="Income Shifting">
+                    <span>Income
+                        <br>Shifting</span>
+                </button>
+            </div>
+            <div class="list-group-item list-group-item-action element">
+                <button class="link" onclick="iconClickHandler('asset-protection', 'Asset Protection')" data-toggle="modal" data-target="#exampleModalCenter"
+                    id="asset-protection">
+                    <img src='../svg/012-safe-box.svg' alt="Asset Protection">
+                    <span>Asset
+                        <br>Protection</span>
+                </button>
+            </div>
+            <div class="list-group-item list-group-item-action element">
+                <button class="link" onclick="iconClickHandler('retirement-planning', 'Retirement Planning')" data-toggle="modal" data-target="#exampleModalCenter"
+                    id="retirement-planning">
+                    <img src='../svg/002-piggy-bank.svg' alt="Retirement Planning">
+                    <span>Retirement
+                        <br>Planning</span>
+                </button>
+            </div>
+            <div class="list-group-item list-group-item-action element">
+                <button class="link" onclick="iconClickHandler('real-estate-strategies', 'Real Estate Strategies')" data-toggle="modal" data-target="#exampleModalCenter"
+                    id="real-estate-strategies">
+                    <img src='../svg/003-home.svg' alt="Real Estate Strategies">
+                    <span>Real Estate
+                        <br>Strategies</span>
+                </button>
+            </div>
+            <div class="list-group-item list-group-item-action element">
+                <button class="link" onclick="iconClickHandler('social-security-planning', 'Social Security Planning')" data-toggle="modal"
+                    data-target="#exampleModalCenter" id="social-security-planning">
+                    <img src='../svg/001-money-2.svg' alt="Social Security Planning">
+                    <span>Social
+                        <br>Security Planning</span>
+                </button>
+            </div>
+            <div class="list-group-item list-group-item-action element">
+                <button class="link" onclick="iconClickHandler('succession-planning', 'Succession Planning')" data-toggle="modal" data-target="#exampleModalCenter"
+                    id="succession-planning">
+                    <img src='../svg/005-notes.svg' alt="Succession Planning">
+                    <span>Succession
+                        <br>Planning</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.
+                        <div class="modal-btn">
+                            <button class="btn btn-dark">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+    crossorigin="anonymous"></script>
+<script>
+    var images = [
+        {
+            src: '../svg/004-handshake.svg',
+            title: 'Estate<br>Planning',
+            id: 'estate-planning'
+        },
+        {
+            src: '../svg/007-folder.svg',
+            title: 'Business<br>Entity<br>Formation',
+            id: 'business-entity-formation'
+        },
+        {
+            src: '../svg/009-money.svg',
+            title: 'Tax<br>Loopholes<br>And Credit',
+            id: 'tax-loopholes-and-credit'
+        },
+        {
+            src: '../svg/011-bar-graph-with-dollar-sign.svg',
+            title: 'Income<br>Shifting',
+            id: 'income-shifting'
+        },
+        {
+            src: '../svg/012-safe-box.svg',
+            title: 'Asset<br>Protection',
+            id: 'asset-protection'
+        },
+        {
+            src: '../svg/002-piggy-bank.svg',
+            title: 'Retirement<br>Planning',
+            id: 'retirement-planning'
+        },
+        {
+            src: '../svg/003-home.svg',
+            title: 'Real Estate<br>Strategies',
+            id: 'real-estate-strategies'
+        },
+        {
+            src: '../svg/001-money-2.svg',
+            title: 'Social Security<br>Planning',
+            id: 'social-security-planning'
+        },
+        {
+            src: '../svg/005-notes.svg',
+            title: 'Succession<br>Planning',
+            id: 'succession-planning'
+        }];
+    function replaceAll(str, find, replace) {
+        return str.replace(new RegExp(find, 'g'), replace);
+    }
+    function iconClickHandler(id, title) {
+        console.log("element clicked: ", id);
+        var innerContent = replaceAll(title, '<br>', ' ');
+        document.getElementById('exampleModalLongTitle').innerText = innerContent;
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>
